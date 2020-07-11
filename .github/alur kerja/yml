@@ -31,3 +31,9 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+Cannot combine properties:
+        Property <unknown>
+        Property HasInfo + Debian + Buntish + ArchLinux + FreeBSD
+        (Property <unknown> is often caused by applying a Property constructor to the wrong number of arguments.)
+    • In the first argument of ‘(&)’, namely
+        ‘props & osDebian Unstable’
