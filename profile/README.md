@@ -1,4 +1,4 @@
-![Open Source at Microsoft](/images/open-at-microsoft.png)
+[![Open Source at Microsoft](/images/open-at-microsoft.png)](https://opensource.microsoft.com/)
 
 ## Get Involved
 
