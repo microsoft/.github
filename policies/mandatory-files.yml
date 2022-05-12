@@ -6,17 +6,27 @@ description: this policy will ensure the presence of Microsoft mandatory files i
 resource: repository
 where:
 - repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase)
+- repository.name.StartsWith("AcademicContent") || repository.name.startsWith("ai-edu")
+- repository.name.StartsWith("api-guidelines") || repository.name.startsWith("ApplicationInsights-JS")
+- repository.name.StartsWith("axe-pipelines-samples") 
+- repository.name.StartsWith("axe-windows") || repository.name.startsWith("AzureStorageExplorer")
+- repository.name.StartsWith("data-accelerator") || repository.name.startsWith("fast-creator")
+- repository.name.StartsWith("gdk") || repository.name.startsWith("microsoft-ui-xaml")
+- repository.name.StartsWith("Microsoft-Win32-Content-Prep-Tool") || repository.name.startsWith("MLC")
+- repository.name.StartsWith("MLOps") || repository.name.startsWith("powerbi-powershell")
+- repository.name.StartsWith("Recognizers-Text") || repository.name.startsWith("RulesEngine")
+- repository.name.StartsWith("spring-cloud-azure") || repository.name.startsWith("SynapseML") 
 
 # primitive configuration
 configuration:
     mandatoryFiles:
-     issueTitle:
+     issueTitle: This repo is missing mandatory files
      issueBody:  |
           There are several mandatory files we require in this
           repository. A pull request has been opened to add the
           missing files. When the pr is merged this issue will be
           closed automatically.
-     prTitle: Adding Microsoft’s official mandatory file(s) to this repo
+     prTitle: Adding mandatory SECURITY.MD file to this repo
      prBody:  |
            This repository needs the standard SECURITY.MD file to help the community understand the security policy and 
            how to safely report security issues. GitHub uses the presence of this file to light-up security reminders and a link to the file. 
