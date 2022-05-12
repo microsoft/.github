@@ -1,0 +1,29 @@
+# metadata
+name: mandatory files policy
+description: this policy will ensure the presence of Microsoft mandatory files into the repos
+
+#filters
+resource: repository
+where:
+- repository.name.startsWith("GitOps.", StringComparison.InvariantCultureIgnoreCase)
+
+# primitive configuration
+configuration:
+    mandatoryFiles:
+     issueTitle:
+     issueBody:  |
+          There are several mandatory files we require in this
+          repository. A pull request has been opened to add the
+          missing files. When the pr is merged this issue will be
+          closed automatically.
+     prTitle: Adding Microsoft’s official mandatory file(s) to this repo
+     prBody:  |
+           This repository needs the standard SECURITY.MD file to help the community understand the security policy and 
+           how to safely report security issues. GitHub uses the presence of this file to light-up security reminders and a link to the file. 
+           This pull request commits the latest SECURITY.MD file from https://github.com/microsoft/repo-templates/blob/main/shared/SECURITY.md.  
+           If you have any questions inside Microsoft, you can refer to the resources at https://aka.ms/opensource.
+     file:
+      - path: LICENSE
+        prContentLink: https://raw.githubusercontent.com/microsoft/repo-templates/main/LICENSE
+      - path: SECURITY.md
+        prContentLink: https://raw.githubusercontent.com/microsoft/repo-templates/main/shared/SECURITY.md
