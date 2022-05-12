@@ -5,12 +5,12 @@ description: this policy will ensure the presence of Microsoft mandatory files i
 #filters
 resource: repository
 where:
-- repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase)
+- repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase) || repository.name.startsWith("AcademicContent") || repository.name.startsWith("ai-edu") || repository.name.startsWith("api-guidelines") || repository.name.startsWith("ApplicationInsights-JS") || repository.name.startsWith("axe-pipelines-samples") || repository.name.startsWith("axe-windows") || repository.name.startsWith("AzureStorageExplorer") || repository.name.startsWith("data-accelerator") || repository.name.startsWith("fast-creator") || repository.name.startsWith("gdk") || repository.name.startsWith("microsoft-ui-xaml") || repository.name.startsWith("Microsoft-Win32-Content-Prep-Tool") || repository.name.startsWith("MLC") || repository.name.startsWith("MLOps") || repository.name.startsWith("powerbi-powershell") || repository.name.startsWith("Recognizers-Text") || repository.name.startsWith("RulesEngine") || repository.name.startsWith("spring-cloud-azure") || repository.name.startsWith("SynapseML") 
 
 # primitive configuration
 configuration:
     mandatoryFiles:
-     issueTitle:
+     issueTitle: This repo is missing mandatory files
      issueBody:  |
           There are several mandatory files we require in this
           repository. A pull request has been opened to add the
