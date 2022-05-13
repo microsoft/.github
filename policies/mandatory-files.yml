@@ -5,7 +5,27 @@ description: this policy will ensure the presence of important files in Microsof
 # filters
 resource: repository
 where:
-- repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase) || repository.name.startsWith("AcademicContent") || repository.name.startsWith("ai-edu") || repository.name.startsWith("api-guidelines") || repository.name.startsWith("ApplicationInsights-JS") || repository.name.startsWith("axe-pipelines-samples") || repository.name.startsWith("axe-windows") || repository.name.startsWith("AzureStorageExplorer") || repository.name.startsWith("data-accelerator") || repository.name.startsWith("fast-creator") || repository.name.startsWith("gdk") || repository.name.startsWith("microsoft-ui-xaml") || repository.name.startsWith("Microsoft-Win32-Content-Prep-Tool") || repository.name.startsWith("MLC") || repository.name.startsWith("MLOps") || repository.name.startsWith("powerbi-powershell") || repository.name.startsWith("Recognizers-Text") || repository.name.startsWith("RulesEngine") || repository.name.startsWith("spring-cloud-azure") || repository.name.startsWith("SynapseML") 
+- |
+  repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("AcademicContent", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("ai-edu", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("api-guidelines", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("ApplicationInsights-JS", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("axe-pipelines-samples", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("axe-windows", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("AzureStorageExplorer", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("data-accelerator", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("fast-creator", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("gdk", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("microsoft-ui-xaml", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("Microsoft-Win32-Content-Prep-Tool", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("MLC", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("MLOps", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("powerbi-powershell", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("Recognizers-Text", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("RulesEngine", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("spring-cloud-azure", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("SynapseML", StringComparison.InvariantCultureIgnoreCase) 
 
 # primitive configuration
 configuration:
