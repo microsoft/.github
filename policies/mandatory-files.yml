@@ -1,29 +1,45 @@
 # metadata
 name: mandatory files policy
-description: this policy will ensure the presence of Microsoft mandatory files into the repos
+description: this policy will ensure the presence of important files in Microsoft project repositories
 
-#filters
+# filters
 resource: repository
 where:
-- repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase) || repository.name.startsWith("AcademicContent") || repository.name.startsWith("ai-edu") || repository.name.startsWith("api-guidelines") || repository.name.startsWith("ApplicationInsights-JS") || repository.name.startsWith("axe-pipelines-samples") || repository.name.startsWith("axe-windows") || repository.name.startsWith("AzureStorageExplorer") || repository.name.startsWith("data-accelerator") || repository.name.startsWith("fast-creator") || repository.name.startsWith("gdk") || repository.name.startsWith("microsoft-ui-xaml") || repository.name.startsWith("Microsoft-Win32-Content-Prep-Tool") || repository.name.startsWith("MLC") || repository.name.startsWith("MLOps") || repository.name.startsWith("powerbi-powershell") || repository.name.startsWith("Recognizers-Text") || repository.name.startsWith("RulesEngine") || repository.name.startsWith("spring-cloud-azure") || repository.name.startsWith("SynapseML") 
+- |
+  repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("AcademicContent", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("ai-edu", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("api-guidelines", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("ApplicationInsights-JS", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("axe-pipelines-samples", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("axe-windows", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("AzureStorageExplorer", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("data-accelerator", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("fast-creator", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("gdk", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("microsoft-ui-xaml", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("Microsoft-Win32-Content-Prep-Tool", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("MLC", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("MLOps", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("powerbi-powershell", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("Recognizers-Text", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("RulesEngine", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("spring-cloud-azure", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("SynapseML", StringComparison.InvariantCultureIgnoreCase) 
 
 # primitive configuration
 configuration:
     mandatoryFiles:
-     issueTitle: This repo is missing mandatory files
+     issueTitle: This repo is missing important files
      issueBody:  |
-          There are several mandatory files we require in this
-          repository. A pull request has been opened to add the
-          missing files. When the pr is merged this issue will be
-          closed automatically.
-     prTitle: Adding Microsoft’s official mandatory file(s) to this repo
+          There are important files that Microsoft projects should all have that are not present in this repository. A pull request has been opened to add the missing file(s). When the pr is merged this issue will be closed automatically.
+          
+          Microsoft teams can [learn more about this effort and share feedback](https://docs.opensource.microsoft.com/releasing/maintain/templates/) within the open source guidance available internally.
+     prTitle: Adding Microsoft SECURITY.MD
      prBody:  |
-           This repository needs the standard SECURITY.MD file to help the community understand the security policy and 
-           how to safely report security issues. GitHub uses the presence of this file to light-up security reminders and a link to the file. 
-           This pull request commits the latest SECURITY.MD file from https://github.com/microsoft/repo-templates/blob/main/shared/SECURITY.md.  
-           If you have any questions inside Microsoft, you can refer to the resources at https://aka.ms/opensource.
+           Please accept this contribution adding the standard Microsoft SECURITY.MD :lock: file to help the community understand the security policy and how to safely report security issues. GitHub uses the presence of this file to light-up security reminders and a link to the file. This pull request commits the latest official SECURITY.MD file from https://github.com/microsoft/repo-templates/blob/main/shared/SECURITY.md.
+           
+           Microsoft teams can [learn more about this effort and share feedback](https://docs.opensource.microsoft.com/releasing/maintain/templates/) within the open source guidance available internally.
      file:
-      - path: LICENSE
-        prContentLink: https://raw.githubusercontent.com/microsoft/repo-templates/main/LICENSE
       - path: SECURITY.md
         prContentLink: https://raw.githubusercontent.com/microsoft/repo-templates/main/shared/SECURITY.md
