@@ -249,7 +249,6 @@ where:
   || repository.name.equals("SymCrypt", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("vscode-java-test", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("formula", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("windows-rs", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("TypeScript-TmLanguage", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("singleshotpose", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("EconML", StringComparison.InvariantCultureIgnoreCase)
