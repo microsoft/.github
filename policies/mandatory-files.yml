@@ -277,7 +277,7 @@ where:
   || repository.name.equals("vscode-remote-try-node", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("community-organization-operations-suite", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("sqltoolsservice", StringComparison.InvariantCultureIgnoreCase)
-    || repository.name.equals("tsyringe", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("tsyringe", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("ReportingServicesTools", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("Win2D-Samples", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("mssql-docker", StringComparison.InvariantCultureIgnoreCase)
