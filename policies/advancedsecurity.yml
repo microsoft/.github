@@ -1,0 +1,12 @@
+name: Advanced Security Settings
+description: Description
+
+resource: repository
+where:
+- |
+  repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase) 
+
+configuration:
+    advancedSecurity:
+        secretScanning: true
+        secretScanningPushProtection: true
