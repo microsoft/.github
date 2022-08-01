@@ -4,7 +4,8 @@ description: Description
 resource: repository
 where:
 - |
-  repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase) 
+  repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("a", StringComparison.InvariantCultureIgnoreCase)
 
 configuration:
     advancedSecurity:
