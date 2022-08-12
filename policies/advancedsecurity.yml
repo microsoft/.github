@@ -6,6 +6,7 @@ where:
 - |
   repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.startsWith("a", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("b", StringComparison.InvariantCultureIgnoreCase)
 
 configuration:
     advancedSecurity:
