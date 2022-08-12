@@ -1,5 +1,5 @@
 name: Advanced Security Settings
-description: Description
+description: GHAS settings policy
 
 resource: repository
 where:
