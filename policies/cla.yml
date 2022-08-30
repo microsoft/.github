@@ -1,0 +1,25 @@
+name: Contributor License Agreement Policy 
+description: CLA policy file
+
+resource: repository
+where:
+- |
+  repository.name.Equals("GitOps", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.Equals("ContributorLicenseAgreement", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.Equals("PullRequestQuantifier", StringComparison.InvariantCultureIgnoreCase)
+configuration: 
+   claPrimitive:
+      claContent: https://raw.githubusercontent.com/ContosoDev/CLA/main/test3.yml  
+      minimalChangeRequired: 
+         files: 1
+         codeLines: 1
+      bypassUsers:
+         - test
+      bypassOrgs:
+         - bloomberg
+      prohibitedCompanies:
+         - msft
+      autoSignMsftEmployee: true
+      signRepos:
+         - repoName: cla-gs
+           companyName: test
