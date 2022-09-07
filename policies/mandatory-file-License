@@ -9,7 +9,7 @@ resource: repository
 configuration:
     mandatoryFiles:
      issueTitle: This repo is missing important License file
-     issueBody: This repository is currently missing a LICENSE.MD file outlining its license. A license helps users understand how to use your project in a compliant manner. You can find the standard MIT license text at the Microsoft repo templates LICENSE file: https://github.com/microsoft/repo-templates/blob/main/shared/LICENSE. 
+     issueBody: This repository is currently missing a LICENSE.MD file outlining its license. A license helps users understand how to use your project in a compliant manner. You can find the standard MIT license text at the Microsoft repo templates LICENSE file: https://github.com/microsoft/repo-templates/blob/main/shared/LICENSE. |
      If you would like to learn more about open source licenses, please visit the document at https://aka.ms/license. 
      prTitle: Adding Microsoft LICENSE
      prBody: 
