@@ -6,6 +6,7 @@ where:
 - |
   repository.name.Equals("GitOps", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.Equals("ContributorLicenseAgreement", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.Equals("PullRequestQuantifier", StringComparison.InvariantCultureIgnoreCase)
 configuration: 
    claPrimitive:
       claContent: https://raw.githubusercontent.com/microsoft/.github/main/CLA/microsoft.yml
