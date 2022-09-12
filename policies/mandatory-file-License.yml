@@ -6,7 +6,17 @@ description: This is a config to check if LICENSE.MD is present in repo.
 resource: repository
 where:
 - |
-  repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase) 
+  repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("NUWA", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("Microsoft-Win32-Content-Prep-Tool", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("NeuralSpeech", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("projectevidens-mobile-android", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("SATechnicalOnboarding", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("SSMA", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("project-azua", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sql-server-migration-assistant", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("WebRTC-universal-samples", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sqlworkshops-RForDataProfessionals", StringComparison.InvariantCultureIgnoreCase)
 
 # primitive configuration
 configuration:
