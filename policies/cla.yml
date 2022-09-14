@@ -6,20 +6,27 @@ where:
 - |
   repository.name.Equals("GitOps", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.Equals("ContributorLicenseAgreement", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.Equals("GitOps.AdvancedSecurity", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.Equals("GitOps.Manifests", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.Equals("GitOps.Clients", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.Equals("GitOps.PolicyEngine", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.Equals("GitOps.Branches", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.Equals("GitOps.MandatoryFiles", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.Equals("GitOps.YmlValidation", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.Equals("GitOps.Primitives", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.Equals("GitOps.Commands", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.Equals("GitOps.WatchdogFeedback", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.Equals("GitOps.Context", StringComparison.InvariantCultureIgnoreCase)
+  
   || repository.name.Equals("PullRequestQuantifier", StringComparison.InvariantCultureIgnoreCase)
 configuration: 
    claPrimitive:
       claContent: https://raw.githubusercontent.com/microsoft/.github/main/CLA/microsoft.yml
       minimalChangeRequired: 
-         files: 1
-         codeLines: 1
-      bypassUsers:
-         - test
+         files: 2
+         codeLines: 16
       bypassOrgs:
          - bloomberg
       prohibitedCompanies:
          - msft
       autoSignMsftEmployee: true
-      signRepos:
-         - repoName: cla-gs
-           companyName: test
