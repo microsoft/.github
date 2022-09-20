@@ -17,7 +17,6 @@ where:
   || repository.name.Equals("GitOps.Commands", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.Equals("GitOps.WatchdogFeedback", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.Equals("GitOps.Context", StringComparison.InvariantCultureIgnoreCase)
-  
   || repository.name.Equals("PullRequestQuantifier", StringComparison.InvariantCultureIgnoreCase)
 configuration: 
    claPrimitive:
