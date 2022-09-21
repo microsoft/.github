@@ -18,6 +18,7 @@ where:
   || repository.name.Equals("GitOps.WatchdogFeedback", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.Equals("GitOps.Context", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.Equals("PullRequestQuantifier", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("a", StringComparison.InvariantCultureIgnoreCase)
 configuration: 
    claPrimitive:
       claContent: https://raw.githubusercontent.com/microsoft/.github/main/CLA/microsoft.yml
