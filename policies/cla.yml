@@ -27,6 +27,8 @@ configuration:
          codeLines: 16
       bypassOrgs:
          - bloomberg
+      bypassUsers:
+         - dependabot[bot]
       prohibitedCompanies:
          - msft
       autoSignMsftEmployee: true
