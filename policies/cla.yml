@@ -29,6 +29,17 @@ configuration:
          - bloomberg
       bypassUsers:
          - dependabot[bot]
+         - greenkeeper[bot]
+         - dotnet-maestro[bot]
+         - dependabot-preview[bot]
+         - openapi-sdkautomation[bot]
+         - github-actions[bot]
+         - content-assistant[bot]
+         - reunion-maestro[bot]
+         - renovate[bot]
+         - microsoft-github-policy-service[bot]
+         - msftbot[bot]
+         - azure-pipelines[bot]
       prohibitedCompanies:
          - msft
       autoSignMsftEmployee: true
