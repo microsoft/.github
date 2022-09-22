@@ -4,24 +4,19 @@ description: CLA policy file
 resource: repository
 where:
 - |
-  repository.name.Equals("GitOps", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.Equals("ContributorLicenseAgreement", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.Equals("GitOps.AdvancedSecurity", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.Equals("GitOps.Manifests", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.Equals("GitOps.Clients", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.Equals("GitOps.PolicyEngine", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.Equals("GitOps.Branches", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.Equals("GitOps.MandatoryFiles", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.Equals("GitOps.YmlValidation", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.Equals("GitOps.Primitives", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.Equals("GitOps.Commands", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.Equals("GitOps.WatchdogFeedback", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.Equals("GitOps.Context", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.Equals("PullRequestQuantifier", StringComparison.InvariantCultureIgnoreCase)
+  repository.name.Equals("PullRequestQuantifier", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.startsWith("a", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.startsWith("b", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.startsWith("c", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.startsWith("d", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("e", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("f", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("g", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("h", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("i", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("j", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("k", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.startsWith("l", StringComparison.InvariantCultureIgnoreCase)
 configuration: 
    claPrimitive:
       claContent: https://raw.githubusercontent.com/microsoft/.github/main/CLA/microsoft.yml
