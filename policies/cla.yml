@@ -3,29 +3,7 @@ description: CLA policy file
 
 resource: repository
 where:
-- |
-  repository.name.Equals("PullRequestQuantifier", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("a", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("b", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("c", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("d", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("e", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("f", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("g", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("h", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("i", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("j", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("k", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("l", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("m", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("m", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("o", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("p", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("r", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("s", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("t", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("u", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("v", StringComparison.InvariantCultureIgnoreCase)
+
 configuration: 
    claPrimitive:
       claContent: https://raw.githubusercontent.com/microsoft/.github/main/CLA/microsoft.yml
