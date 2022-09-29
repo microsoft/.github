@@ -78,9 +78,8 @@ configuration:
      prTitle: Adding Microsoft LICENSE
      prBody: 
      file:
-      - path: LICENSE.MD
+      - path: license((-|_)([a-z0-9])*)*(\.[-_a-z0-9]+)*
         ignoreCase: true
-        ignoreExtension: true
      issueReminder:
         firstReminderGapDays: -1               
         followUpReminderGapDays: 0
