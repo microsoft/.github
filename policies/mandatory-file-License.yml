@@ -67,6 +67,7 @@ where:
   || repository.name.equals("WinObjC-Samples", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("slingshot", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("aims-tscience-nl2code", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("dia-rs", StringComparison.InvariantCultureIgnoreCase)
 
 # primitive configuration
 configuration:
