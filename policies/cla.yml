@@ -5,8 +5,8 @@ resource: repository
 where:
 
 configuration: 
-   claPrimitive:
-      claContent: https://raw.githubusercontent.com/microsoft/.github/main/CLA/microsoft.yml
+   cla:
+      content: https://raw.githubusercontent.com/microsoft/.github/main/CLA/microsoft.yml
       minimalChangeRequired: 
          files: 2
          codeLines: 16
@@ -109,4 +109,5 @@ configuration:
       autoSignMsftEmployee: true
       signRepos:
       - repoName: cla-approvers-intel
+        fileName: approvedUsers.csv
         companyName: intel
