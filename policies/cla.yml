@@ -9,7 +9,7 @@ configuration:
       minimalChangeRequired: 
          files: 2
          codeLines: 16
-      bypassOrgs:
+      bypassOrgs1:
          - bloomberg
       bypassUsers:
          - dependabot[bot]
