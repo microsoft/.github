@@ -25,6 +25,9 @@ configuration:
          - msftbot[bot]
          - azure-pipelines[bot]
          - prmerger-test[bot]
+         - learn-build-service-test[bot]
+         - learn-build-service-ppe[bot]
+         - learn-build-service-prod[bot]
          - CBL-Mariner-Bot
          - pbicvbot
          - acomghbot
