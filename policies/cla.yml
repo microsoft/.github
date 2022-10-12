@@ -24,6 +24,7 @@ configuration:
          - microsoft-github-policy-service[bot]
          - msftbot[bot]
          - azure-pipelines[bot]
+         - prmerger-test[bot]
          - CBL-Mariner-Bot
          - pbicvbot
          - acomghbot
