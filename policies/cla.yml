@@ -1,4 +1,4 @@
-name: Contributor License Agreement Policy 
+name: Contributor License Agreement Policy
 description: CLA policy file
 
 resource: repository
@@ -11,7 +11,7 @@ configuration:
          codeLines: 16
       bypassOrgs:
          - bloomberg
-      bypassUsers1:
+      bypassUsers:
          - dependabot[bot]
          - greenkeeper[bot]
          - dotnet-maestro[bot]
