@@ -4,7 +4,7 @@ description: CLA policy file
 resource: repository
 where:
 - |
-  '!repository.name.equals("CHERIoT", StringComparison.InvariantCultureIgnoreCase)' # this is a collaboration project not under an open source license
+  !repository.name.equals("CHERIoT", StringComparison.InvariantCultureIgnoreCase) # this is a collaboration project not under an open source license
 
 configuration: 
    cla:
