@@ -110,6 +110,7 @@ configuration:
          - OhMyGuus-Bot
          - podman-desktop-bot
          - liurunliang-bot
+         - playwrightmachine
       prohibitedCompanies:
          - msft
       autoSignMsftEmployee: true
