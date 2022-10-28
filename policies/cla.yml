@@ -111,6 +111,11 @@ configuration:
          - podman-desktop-bot
          - liurunliang-bot
          - playwrightmachine
+         - openpublishbuild
+         - opbld27
+         - opbld15
+         - opbld16
+         - opbld17
       prohibitedCompanies:
          - msft
       autoSignMsftEmployee: true
