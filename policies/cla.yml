@@ -123,3 +123,6 @@ configuration:
       - repoName: cla-approvers-intel
         fileName: approvedUsers.csv
         companyName: intel
+      - repoName: cla-approved-bots
+        fileName: approvedBots.csv
+        companyName: microsoft-bots
