@@ -116,6 +116,7 @@ configuration:
          - opbld15
          - opbld16
          - opbld17
+         - VSC-Service-Account
       prohibitedCompanies:
          - msft
       autoSignMsftEmployee: true
