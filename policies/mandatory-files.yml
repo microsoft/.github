@@ -1685,6 +1685,7 @@ where:
 # primitive configuration
 configuration:
     mandatoryFiles:
+     autoMergeDays: 10
      issueTitle: This repo is missing important files
      issueBody:  |
           There are important files that Microsoft projects should all have that are not present in this repository. A pull request has been opened to add the missing file(s). When the pr is merged this issue will be closed automatically.
@@ -1699,3 +1700,10 @@ configuration:
       - path: SECURITY.md
         prContentLink: https://raw.githubusercontent.com/microsoft/repo-templates/main/shared/SECURITY.md
         ignoreCase: true
+        prFilePath: SECURITY.md
+        otherPaths:
+        - docs/SECURITY.md
+        - .github/SECURITY.md
+     issueReminder:
+        firstReminderGapDays: 7               
+        followUpReminderGapDays: 2
