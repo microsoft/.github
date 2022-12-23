@@ -949,7 +949,6 @@ where:
   || repository.name.equals("appcenter-sampleapp-ios-swift", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("fundraising-and-engagement", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("simonhzh", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("openjdk-jdk", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("elasticqueue", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("synckusto", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("license-checker-webpack-plugin", StringComparison.InvariantCultureIgnoreCase)
