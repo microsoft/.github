@@ -5,6 +5,7 @@ resource: repository
 where:
 - |
   repository.name.equals("WinAppPerf", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("msix-packaging", StringComparison.InvariantCultureIgnoreCase) 
 
 configuration:
   activateFabricBot:
