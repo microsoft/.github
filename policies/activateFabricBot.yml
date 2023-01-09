@@ -1,0 +1,11 @@
+name: Fabric Bot
+description: Description
+
+resource: repository
+where:
+- |
+  repository.name.equals("WinAppPerf", StringComparison.InvariantCultureIgnoreCase)
+
+configuration:
+  activateFabricBot:
+    activate: true
