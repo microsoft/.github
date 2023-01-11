@@ -5,9 +5,11 @@ resource: repository
 where:
 - |
   repository.name.equals("WinAppPerf", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("msix-packaging", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("msix-packaging", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("ContributorLicenseAgreement", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("ContributorLicenseAgreement", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("vscode-azurearmtools", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("Windows-Containers", StringComparison.InvariantCultureIgnoreCase)
 
 configuration:
   activateFabricBot:
