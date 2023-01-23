@@ -22,6 +22,13 @@ where:
   || repository.name.equals("react-native-dualscreen", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("hermes-windows", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("testfx", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("vstest", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("fluentui-apple", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("ManagedEsent", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("Extensible-Storage-Engine", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("appcenter", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("ApplicationInsights-Java", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("react-native-xaml", StringComparison.InvariantCultureIgnoreCase)
 
 configuration:
   activateFabricBot:
