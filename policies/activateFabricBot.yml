@@ -2,33 +2,6 @@ name: Fabric Bot
 description: Description
 
 resource: repository
-where:
-- |
-  repository.name.equals("WinAppPerf", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("msix-packaging", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("ContributorLicenseAgreement", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("vscode-azurearmtools", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("Windows-Containers", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("accessibility-insights-web", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("accessibility-insights-docs", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("axe-sarif-converter", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("axe-pipelines-samples", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("axe-windows", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("wopi-validator-core", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("accessibility-insights-for-android-service", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("v8-jsi", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("react-native-windows-samples", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("react-native-dualscreen", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("hermes-windows", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("testfx", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("vstest", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("fluentui-apple", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("ManagedEsent", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("Extensible-Storage-Engine", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("appcenter", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("ApplicationInsights-Java", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("react-native-xaml", StringComparison.InvariantCultureIgnoreCase)
 
 configuration:
   activateFabricBot:
