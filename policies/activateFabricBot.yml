@@ -66,6 +66,7 @@ where:
   || repository.name.equals("azure-sdk-for-js", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("microsoft-graph-docs-1", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("azure-quickstart-templates", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("onefuzz", StringComparison.InvariantCultureIgnoreCase)
 
 configuration:
   activateFabricBot:
