@@ -67,6 +67,7 @@ where:
   || repository.name.equals("microsoft-graph-docs-1", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("azure-quickstart-templates", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("onefuzz", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("fluentui-android", StringComparison.InvariantCultureIgnoreCase)
 
 configuration:
   activateFabricBot:
