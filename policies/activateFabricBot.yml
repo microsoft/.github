@@ -68,6 +68,9 @@ where:
   || repository.name.equals("azure-quickstart-templates", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("onefuzz", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("fluentui-android", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("DurableFunctionsMonitor", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("durabletask-mssql", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("durabletask-netherite", StringComparison.InvariantCultureIgnoreCase)
 
 configuration:
   activateFabricBot:
