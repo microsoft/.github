@@ -72,6 +72,7 @@ where:
   || repository.name.equals("durabletask-mssql", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("durabletask-netherite", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("devhome", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("ApplicationInsights-Java", StringComparison.InvariantCultureIgnoreCase)
 
 configuration:
   activateFabricBot:
