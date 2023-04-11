@@ -5,7 +5,7 @@ resource: repository
 where:
 - |
   repository.name.equals("PowerToys", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("cadl", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("typespec", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("winget-pkgs", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("Detours", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("react-native-windows", StringComparison.InvariantCultureIgnoreCase)
