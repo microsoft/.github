@@ -51,7 +51,6 @@ where:
   || repository.name.equals("WindowsAppSDK", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("hermes-windows", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("winget-create", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.equals("GitOps", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("winget-create", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("WinAppPerf", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("accessibility-insights-docs", StringComparison.InvariantCultureIgnoreCase)
