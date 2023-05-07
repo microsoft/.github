@@ -74,6 +74,7 @@ where:
   || repository.name.equals("ApplicationInsights-Java", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("durabletask-dotnet", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("durabletask-java", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("vsmarketplace", StringComparison.InvariantCultureIgnoreCase)
 
 configuration:
   activateFabricBot:
