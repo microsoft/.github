@@ -39,6 +39,7 @@ where:
   || repository.name.equals("hermes-windows", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("kiota", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("ManagedEsent", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("marketplace-testing", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("microsoft-graph-docs-1", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("microsoft-ui-xaml", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("msix-packaging", StringComparison.InvariantCultureIgnoreCase)
