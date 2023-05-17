@@ -25,6 +25,7 @@ where:
   || repository.name.equals("code-push", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("Detours", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("devhome", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("devhomegithubextension", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("DurableFunctionsMonitor", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("durabletask-dotnet", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("durabletask-java", StringComparison.InvariantCultureIgnoreCase)
