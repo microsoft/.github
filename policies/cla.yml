@@ -5,6 +5,9 @@ resource: repository
 where:
 - |
   !repository.name.equals("CHERIoT", StringComparison.InvariantCultureIgnoreCase)
+where:
+- |
+  !repository.name.equals("AzureAD/mip-sdk-for-cpp", StringComparison.InvariantCultureIgnoreCase)
 
 configuration: 
    cla:
