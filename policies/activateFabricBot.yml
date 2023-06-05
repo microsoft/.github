@@ -45,6 +45,8 @@ where:
   || repository.name.equals("microsoft-ui-xaml", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("msix-packaging", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("onefuzz", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals(".playbook", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("playbook", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("PowerShellForGitHub", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("PowerToys", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("react-native-code-push", StringComparison.InvariantCultureIgnoreCase)
