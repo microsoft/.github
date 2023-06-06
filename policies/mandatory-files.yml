@@ -4,7 +4,8 @@ description: this policy will ensure the presence of important files in Microsof
 
 # filters
 resource: repository
-where:
+- |
+  !repository.name.equals("vscode-wiki", StringComparison.InvariantCultureIgnoreCase) # A special repo that mirrors vscode.wiki to enable contributions
 
 # primitive configuration
 configuration:
