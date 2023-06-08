@@ -5,6 +5,12 @@ description: this policy will ensure the presence of important files in Microsof
 # filters
 resource: repository
 where:
+- |
+  !repository.name.equals("openjdk-jdk", StringComparison.InvariantCultureIgnoreCase)
+  ||!repository.name.equals("openjdk-jdk11", StringComparison.InvariantCultureIgnoreCase)
+  ||!repository.name.equals("openjdk-jdk17", StringComparison.InvariantCultureIgnoreCase)
+  ||!repository.name.equals("openjdk-jdk20", StringComparison.InvariantCultureIgnoreCase)
+  ||!repository.name.equals("openjdk-jdk21", StringComparison.InvariantCultureIgnoreCase)
 
 # primitive configuration
 configuration:
