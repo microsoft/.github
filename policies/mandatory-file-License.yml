@@ -5,6 +5,8 @@ description: This is a config to check if a LICENSE is present in a repo.
 # filters
 resource: repository
 where:
+- |
+  !repository.name.equals("vscode-wiki", StringComparison.InvariantCultureIgnoreCase) # A special repo that mirrors vscode.wiki to enable contributions
 
 # primitive configuration
 configuration:
