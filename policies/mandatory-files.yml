@@ -7,10 +7,10 @@ resource: repository
 where:
 - |
   !repository.name.equals("openjdk-jdk", StringComparison.InvariantCultureIgnoreCase)
-  || !repository.name.equals("openjdk-jdk11u", StringComparison.InvariantCultureIgnoreCase)
-  || !repository.name.equals("openjdk-jdk17u", StringComparison.InvariantCultureIgnoreCase)
-  || !repository.name.equals("openjdk-jdk20u", StringComparison.InvariantCultureIgnoreCase)
-  || !repository.name.equals("openjdk-jdk21u", StringComparison.InvariantCultureIgnoreCase)
+  && !repository.name.equals("openjdk-jdk11u", StringComparison.InvariantCultureIgnoreCase)
+  && !repository.name.equals("openjdk-jdk17u", StringComparison.InvariantCultureIgnoreCase)
+  && !repository.name.equals("openjdk-jdk20u", StringComparison.InvariantCultureIgnoreCase)
+  && !repository.name.equals("openjdk-jdk21u", StringComparison.InvariantCultureIgnoreCase)
 
 # primitive configuration
 configuration:
