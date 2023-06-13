@@ -1,5 +1,5 @@
 # metadata
-name: mandatory files policy
+name: mandatory files policy.
 description: this policy will ensure the presence of important files in Microsoft project repositories.
 
 # filters
