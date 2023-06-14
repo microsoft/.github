@@ -1,17 +1,12 @@
 # metadata
-name: mandatory files policy.
+name: Mandatory files policy.
 description: this policy will ensure the presence of important files in Microsoft project repositories.
 
 # filters
 resource: repository
 where:
 - |
-  !repository.name.equals("openjdk-jdk", StringComparison.InvariantCultureIgnoreCase)
-  && !repository.name.equals("openjdk-jdk11u", StringComparison.InvariantCultureIgnoreCase)
-  && !repository.name.equals("openjdk-jdk17u", StringComparison.InvariantCultureIgnoreCase)
-  && !repository.name.equals("openjdk-jdk20u", StringComparison.InvariantCultureIgnoreCase)
-  && !repository.name.equals("openjdk-jdk21u", StringComparison.InvariantCultureIgnoreCase)
-  && !repository.name.equals("vscode-wiki", StringComparison.InvariantCultureIgnoreCase) # A special repo that mirrors vscode.wiki to enable contributions
+  !repository.name.equals("vscode-wiki", StringComparison.InvariantCultureIgnoreCase) # A special repo that mirrors vscode.wiki to enable contributions
 
 # primitive configuration
 configuration:
