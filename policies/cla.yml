@@ -16,7 +16,6 @@ configuration:
          - bloomberg
       bypassUsers:
          - acomghbot
-         - acomghbot
          - ActivityWatchBot
          - agentoffline-bot
          - akri-bot
