@@ -16,7 +16,6 @@ configuration:
          - bloomberg
       bypassUsers:
          - acomghbot
-         - acomghbot
          - ActivityWatchBot
          - agentoffline-bot
          - akri-bot
@@ -39,6 +38,7 @@ configuration:
          - deanbot
          - dependabot[bot]
          - dependabot-preview[bot]
+         - digital-pathology
          - dn-helix-agents-bot
          - dokku-bot
          - dotnet-bot
