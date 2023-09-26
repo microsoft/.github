@@ -1,9 +1,9 @@
-# Microsoft Open Source Code of Conduct
+ 521xueweihan#      마이크로소프트 오픈 소스 행동 코드     
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+    이 프로젝트는      [마이크로소프트 오픈 소스 행동 코드](https://opensource.microsoft.com/codeofconduct/).
 
-Resources:
+자원
 
-- [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)
-- [Microsoft Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)
-- Contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with questions or concerns
+- [마이크로소프트 오픈 소스 행동 코드](https://opensource.microsoft.com/codeofconduct/)
+- [마이크로소프트 행동 코드 FAQ](https://opensource.microsoft.com/codeofconduct/faq/)
+-      [opencode@microsoft.com](mailto:opencode@microsoft.com) 
