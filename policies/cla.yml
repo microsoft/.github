@@ -94,6 +94,7 @@ configuration:
          - pulumi-bot
          - PylanceBot
          - qa-bot
+         - release-please[bot]
          - renovate[bot]
          - reunion-maestro[bot]
          - rnbot
