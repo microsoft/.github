@@ -106,6 +106,7 @@ configuration:
          - testplatform-bot
          - thisisnotarobot
          - trustedroots-bot
+         - TypefaceSdk
          - typescript-bot
          - uefibot
          - UI-Fabric-RN-Bot
