@@ -50,6 +50,9 @@ configuration:
          - edtbot
          - engelbot
          - flinchbot
+         - genescope_imaging
+         - genescope_single-cell
+         - genescope_multi-modal
          - github-actions[bot]
          - goodboyrobot
          - greenkeeper[bot]
@@ -101,6 +104,8 @@ configuration:
          - rnsdkbot
          - RunTheBot
          - sasabot
+         - scOlympia
+         - stain-anything
          - SoundBot
          - tecbot
          - testplatform-bot
