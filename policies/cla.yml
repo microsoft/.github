@@ -4,6 +4,7 @@ description: CLA policy file
 resource: repository
 where:
 - |
+  !repository.name.equals("CHERIoT", StringComparison.InvariantCultureIgnoreCase)
   !repository.name.equals("digital-pathology", StringComparison.InvariantCultureIgnoreCase)
   !repository.name.equals("genescope_imaging", StringComparison.InvariantCultureIgnoreCase)
   !repository.name.equals("genescope_single-cell", StringComparison.InvariantCultureIgnoreCase)
