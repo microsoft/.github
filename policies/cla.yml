@@ -11,6 +11,7 @@ where:
   && !repository.name.equals("genescope_multi-modal", StringComparison.InvariantCultureIgnoreCase)
   && !repository.name.equals("scOlympia", StringComparison.InvariantCultureIgnoreCase)
   && !repository.name.equals("stain-anything", StringComparison.InvariantCultureIgnoreCase)
+  && !repository.name.equals("qualys-command-line-agent", StringComparison.InvariantCultureIgnoreCase)
 configuration: 
    cla:
       content: https://raw.githubusercontent.com/microsoft/.github/main/CLA/microsoft.yml
