@@ -7,9 +7,9 @@ Right now, open communities are building amazing software together, and there ar
 * [Explore featured projects](https://opensource.microsoft.com/projects/)
 * [Explore open source jobs at Microsoft](https://careers.microsoft.com/us/en/search-results?keywords=open%20source)
 * [Apply for Azure credits for open source projects](https://opensource.microsoft.com/azure-credits)
-* Please use [repository issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue)
+* Use [repository issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue)
 and not [opensource@microsoft.com](mailto:opensource@microsoft.com) to ask questions specific to an individual Microsoft
-repository. 
+repository.
 
 Visit [opensource.microsoft.com](https://opensource.microsoft.com) to learn more!
 
