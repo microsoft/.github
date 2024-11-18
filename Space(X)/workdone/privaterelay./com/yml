@@ -1,6 +1,4 @@
-name: 'Identify and close stale issues and PRs'
-
-on:
+on: #!/de
   workflow_dispatch:
   schedule:
     - cron: '15 1 * * *'
