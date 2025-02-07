@@ -123,6 +123,7 @@ configuration:
          - WorkingRobot
          - wslbot
          - zangobot
+         - microsoft-graph-devx-bot[bot]
 
       prohibitedCompanies:
          - msft
