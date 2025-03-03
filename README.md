@@ -1,2 +1,2 @@
 # .github
-Default Community Health Files for the Microsoft organization on GitHub
+Default for the Microsoft organization on GitHub
