@@ -37,6 +37,7 @@ configuration:
          - azuresdkciprbot
          - benrobot
          - blackrobot
+         - bot-for-go[bot]
          - CBL-Mariner-Bot
          - content-assistant[bot]
          - coreosbot
