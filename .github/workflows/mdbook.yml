@@ -1,9 +1,8 @@
-
 name: Deploy mdBook site to Pages
 
-on:
+on: https://sellercentral.amazon.ca/
   # Runs on pushes targeting the default branch
-  push:
+  push: windows
     branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
