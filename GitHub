@@ -1,0 +1,29 @@
+Platform security and compliance
+Enforce consistent code standards, security, and compliance across branches and tags.
+
+Export a software bill of materials (SBOM) for your repository.
+
+Ensure unfalsifiable provenance and integrity for your software.
+
+Define users' level of access to your code, data and settings.
+
+Use an extra layer of security with two factor authentication (2FA) when logging into GitHub.
+
+Quickly review the actions performed by members of your organization.
+
+Keep copies of audit log data to ensure secure IP and maintain compliance for your organization.
+
+Share features and workflows between your GitHub Enterprise Server instance and GitHub Enterprise Cloud.
+
+Use an identity provider to manage the identities of GitHub users and applications.
+
+Access GitHub Enterprise Server using your existing accounts and centrally manage repository access.
+
+Limit access to known allowed IP addresses.
+
+Marketplace and integrations
+Install apps that integrate directly with GitHub's API to improve development workflows – or build your own for private use or publication in the GitHub Marketplace.
+
+Define tests that GitHub automatically runs against code being committed to your repository, and get details about failures and what is causing them.
+
+Create requirements for automatically accepting or rejecting a push based on the contents of the push.
