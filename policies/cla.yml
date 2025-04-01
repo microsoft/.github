@@ -125,7 +125,6 @@ configuration:
          - wslbot
          - zangobot
          - microsoft-graph-devx-bot[bot]
-         - microsoft-playwright-automation[bot]
 
       prohibitedCompanies:
          - msft
