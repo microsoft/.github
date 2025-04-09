@@ -55,6 +55,7 @@ configuration:
          - dotnet-maestro-bot
          - dotnet-winget-bot
          - edtbot
+         - embeddedbot
          - engelbot
          - flinchbot
          - github-actions[bot]
