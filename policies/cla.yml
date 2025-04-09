@@ -38,6 +38,7 @@ configuration:
          - benrobot
          - blackrobot
          - bot-for-go[bot]
+         - business-central-bot[bot]
          - CBL-Mariner-Bot
          - content-assistant[bot]
          - coreosbot
