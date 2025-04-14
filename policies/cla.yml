@@ -42,6 +42,7 @@ configuration:
          - CBL-Mariner-Bot
          - content-assistant[bot]
          - copilot
+         - copilot-swe-agent[bot]
          - coreosbot
          - csd-automationbot
          - deanbot
