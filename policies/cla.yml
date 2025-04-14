@@ -41,7 +41,8 @@ configuration:
          - business-central-bot[bot]
          - CBL-Mariner-Bot
          - content-assistant[bot]
-         - copilot
+         - Copilot
+         - Copilot[bot]
          - copilot-swe-agent[bot]
          - coreosbot
          - csd-automationbot
