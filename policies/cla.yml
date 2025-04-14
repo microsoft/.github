@@ -41,6 +41,7 @@ configuration:
          - business-central-bot[bot]
          - CBL-Mariner-Bot
          - content-assistant[bot]
+         - copilot-swe-agent
          - coreosbot
          - csd-automationbot
          - deanbot
