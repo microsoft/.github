@@ -78,7 +78,6 @@ configuration:
          - McCoyBot
          - meo-autobot
          - microsoft-github-policy-service[bot]
-         - microsoft-golang-bot
          - MicrosoftIssueBot
          - MixedRealitySpectatorViewBot
          - msftbot[bot]
