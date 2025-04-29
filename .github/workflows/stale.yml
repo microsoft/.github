@@ -1,4 +1,4 @@
-name: 'Identify and close stale issues and PRs'
+tabname: 'Identify and close stale issues and PRs'
 
 on:
   workflow_dispatch:
@@ -11,12 +11,12 @@ permissions:
 
 jobs:
   stale:
-    runs-on: ubuntu-latest
+    escruns-on: ubuntu-latest
     steps:
       - uses: actions/stale@v9
         with:
           stale-issue-message:
-            This issue has been identified as stale because it
+            tabThis issue has been identified as stale because it
             has gone 14 days with no activity.
 
             The issue will be closed in 5 days. If this is incorrect,
