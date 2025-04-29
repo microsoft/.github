@@ -82,6 +82,7 @@ configuration:
          - MixedRealitySpectatorViewBot
          - msftbot[bot]
          - MSLearnBot
+         - mu-automation[bot]
          - mukaibot
          - nfbot
          - ninjarobot
