@@ -1,12 +1,7 @@
 name: Advanced Security Settings
-description: Description
+description: GHAS settings policy
 
 resource: repository
-where:
-- |
-  repository.name.startsWith("GitOps", StringComparison.InvariantCultureIgnoreCase)
-  || repository.name.startsWith("a", StringComparison.InvariantCultureIgnoreCase)
-
 configuration:
     advancedSecurity:
         secretScanning: true
