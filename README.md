@@ -1,2 +1,3 @@
 # .github
-Default Community Health Files for the Microsoft organization on GitHub
+Default Community H Files for the
+open source Microsoft organization on GitHub
