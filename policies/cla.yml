@@ -131,6 +131,7 @@ configuration:
          - zangobot
          - microsoft-graph-devx-bot[bot]
          - microsoft-playwright-automation[bot]
+         - chatconfig-production[bot]
 
       prohibitedCompanies:
          - msft
