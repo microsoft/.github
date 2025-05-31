@@ -1,29 +1,40 @@
 # metadata
-name: mandatory files policy
-description: this policy will ensure the presence of Microsoft mandatory files into the repos
+name: Mandatory files policy.
+description: this policy will ensure the presence of important files in Microsoft project repositories.
 
-#filters
+# filters
 resource: repository
 where:
-- repository.name.startsWith("GitOps.", StringComparison.InvariantCultureIgnoreCase)
+- |
+  !repository.name.equals("openjdk-jdk", StringComparison.InvariantCultureIgnoreCase)
+  && !repository.name.equals("openjdk-jdk11u", StringComparison.InvariantCultureIgnoreCase)
+  && !repository.name.equals("openjdk-jdk17u", StringComparison.InvariantCultureIgnoreCase)
+  && !repository.name.equals("openjdk-jdk20u", StringComparison.InvariantCultureIgnoreCase)
+  && !repository.name.equals("openjdk-jdk21u", StringComparison.InvariantCultureIgnoreCase)
+  && !repository.name.equals("vscode-wiki", StringComparison.InvariantCultureIgnoreCase) # A special repo that mirrors vscode.wiki to enable contributions
 
 # primitive configuration
 configuration:
     mandatoryFiles:
-     issueTitle:
+     autoMergeDays: 10
+     issueTitle: This repo is missing important files
      issueBody:  |
-          There are several mandatory files we require in this
-          repository. A pull request has been opened to add the
-          missing files. When the pr is merged this issue will be
-          closed automatically.
-     prTitle: Adding Microsoft’s official mandatory file(s) to this repo
+          There are important files that Microsoft projects should all have that are not present in this repository. A pull request has been opened to add the missing file(s). When the pr is merged this issue will be closed automatically.
+          
+          Microsoft teams can [learn more about this effort and share feedback](https://docs.opensource.microsoft.com/releasing/maintain/templates/) within the open source guidance available internally.
+     prTitle: Adding Microsoft SECURITY.MD
      prBody:  |
-           This repository needs the standard SECURITY.MD file to help the community understand the security policy and 
-           how to safely report security issues. GitHub uses the presence of this file to light-up security reminders and a link to the file. 
-           This pull request commits the latest SECURITY.MD file from https://github.com/microsoft/repo-templates/blob/main/shared/SECURITY.md.  
-           If you have any questions inside Microsoft, you can refer to the resources at https://aka.ms/opensource.
+           Please accept this contribution adding the standard Microsoft SECURITY.MD :lock: file to help the community understand the security policy and how to safely report security issues. GitHub uses the presence of this file to light-up security reminders and a link to the file. This pull request commits the latest official SECURITY.MD file from https://github.com/microsoft/repo-templates/blob/main/shared/SECURITY.md.
+           
+           Microsoft teams can [learn more about this effort and share feedback](https://docs.opensource.microsoft.com/releasing/maintain/templates/) within the open source guidance available internally.
      file:
-      - path: LICENSE
-        prContentLink: https://raw.githubusercontent.com/microsoft/repo-templates/main/LICENSE
       - path: SECURITY.md
         prContentLink: https://raw.githubusercontent.com/microsoft/repo-templates/main/shared/SECURITY.md
+        ignoreCase: true
+        prFilePath: SECURITY.md
+        otherPaths:
+        - docs/SECURITY.md
+        - .github/SECURITY.md
+     issueReminder:
+        firstReminderGapDays: 7               
+        followUpReminderGapDays: 2

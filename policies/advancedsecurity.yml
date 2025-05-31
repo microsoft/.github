@@ -1,0 +1,8 @@
+name: Advanced Security Settings
+description: GHAS settings policy
+
+resource: repository
+configuration:
+    advancedSecurity:
+        secretScanning: true
+        secretScanningPushProtection: true
