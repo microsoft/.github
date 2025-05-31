@@ -1,0 +1,8 @@
+name: Repo Visibility Policy
+description: Provides governance when attempting to open source a repository.
+
+resource: repository
+
+configuration:
+  repoVisibilitySettings:
+    active: true
