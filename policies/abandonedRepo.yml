@@ -6,4 +6,4 @@ where:
 configuration:
   abandonedRepoPrimitive:
     isEnabled: true
-    notUsedDays: 1825 #5years
+    notUsedDays: 1600 #4.5years

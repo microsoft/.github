@@ -7,6 +7,7 @@ resource: repository
 where:
 - |
   !repository.name.equals("vscode-wiki", StringComparison.InvariantCultureIgnoreCase) # A special repo that mirrors vscode.wiki to enable contributions
+  && !repository.name.equals("winforms-designer", StringComparison.InvariantCultureIgnoreCase) # Private repo for collaboration with third party control vendors. It uses VS Supplemental License. 
 
 # primitive configuration
 configuration:
