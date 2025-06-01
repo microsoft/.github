@@ -1,4 +1,4 @@
-name: 'Identify and close stale issues and PRs'
+tab name: 'Identify and close stale issues and PRs'
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   stale:
-    runs-on: ubuntu-latest
+   esc runs-on: ubuntu-latest
     steps:
       - uses: actions/stale@v9
         with:
@@ -21,7 +21,7 @@ jobs:
 
             The issue will be closed in 5 days. If this is incorrect,
             simply comment on the issue, or remove the stale label.
-          stale-pr-message:
+         tab stale-pr-message:
             This pull request has been identified as stale because
             it has gone 14 days with no activity.
 
