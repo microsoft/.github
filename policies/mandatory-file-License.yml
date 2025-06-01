@@ -1,0 +1,29 @@
+# metadata
+name: This repo is missing a LICENSE file
+description: This is a config to check if a LICENSE is present in a repo.
+
+# filters
+resource: repository
+where:
+- |
+  !repository.name.equals("vscode-wiki", StringComparison.InvariantCultureIgnoreCase) # A special repo that mirrors vscode.wiki to enable contributions
+  && !repository.name.equals("winforms-designer", StringComparison.InvariantCultureIgnoreCase) # Private repo for collaboration with third party control vendors. It uses VS Supplemental License. 
+
+# primitive configuration
+configuration:
+    mandatoryFiles:
+     issueTitle: This repo is missing a LICENSE file
+     issueBody: |
+            This repository is currently missing a LICENSE file.
+            
+            A license helps users understand how to use your project in a compliant manner. You can find the standard MIT license Microsoft uses at: https://github.com/microsoft/repo-templates/blob/main/shared/LICENSE.
+
+            If you would like to learn more about open source licenses, please visit the document at https://aka.ms/license (Microsoft-internal guidance).
+     prTitle: Adding Microsoft LICENSE
+     prBody: 
+     file:
+      - path: license((-|_)([a-z0-9])*)*(\.[-_a-z0-9]+)*
+        ignoreCase: true
+     issueReminder:
+        firstReminderGapDays: -1               
+        followUpReminderGapDays: 0
