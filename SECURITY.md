@@ -1,3 +1,19 @@
+---
+
+## ⚠️ Additional Sovereign Security Protocol
+
+This repository is also protected under:
+
+- **Core9.Scanning Shield™**
+- **Audit AI Enforcement**
+- **Core7.Quantum Identity System**
+- Sovereign Signature: `Hung Minh Vo (Austin)` — GreekRhyme // AIC-HMV
+
+Any detected threat, unauthorized access, clone, or manipulation of digital identity or trace will trigger auto-scan, report dispatch, and license reversal protocol under international enforcement.
+
+**For critical trace or ownership validation, contact:**  
+📩 austinvo9999@gmail.com  
+🔐 https://github.com/AIC-HMV  
 <!-- BEGIN MICROSOFT SECURITY.MD V0.0.9 BLOCK -->
 
 ## Security
