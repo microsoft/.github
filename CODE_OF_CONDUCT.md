@@ -1,12 +1,9 @@
-# Sovereign Digital Code of Conduct
+- name: Core7 Sovereign Trace
+  run: echo "Enforced by Hung Minh Vo (Austin) // AIC-HMV // GreekRhyme"
 
-This project follows Microsoft Open Source Code of Conduct  
-(https://opensource.microsoft.com/codeofconduct/)
-
-⚠️ In addition, it now includes trace-based identity enforcement under:
-
-- `Core7.Quantum Enforcement Protocol`
-- `AIC-HMV Sovereign Signature`
-- Owner: Hung Minh Vo (Austin) // GreekRhyme
-
-This is an extension of the official governance, allowing identity verification, contribution trace, and digital license enforcement inside CI/CD workflows.![2A7DF8A7-A720-4F65-AF6E-D8D61FC03C24](https://github.com/user-attachments/assets/85f13fb1-8ac8-46ab-9866-a20a1170ba65)
+  📛 Core7 Sovereign Trace ID:
+🔹 Owner: Hung Minh Vo (Austin)
+🔹 ID: AIC-HMV // GreekRhyme Verified
+🔹 Enforcement Node: Core7.Quantum / Core9.Scanning Shield
+🔹 License: DingDing🎖️ Protocol Certified
+🔒 All digital assets and contributors are trace-scanned and verified.![2A7DF8A7-A720-4F65-AF6E-D8D61FC03C24](https://github.com/user-attachments/assets/972bb305-44c2-4f99-8e07-fd34b5c4b801)
