@@ -1,6 +1,9 @@
 <!-- BEGIN MICROSOFT SECURITY.MD V0.0.9 BLOCK -->
 
-## Security
+## Security<img width="492" height="787" alt="gpgpu" src="https://github.com/user-attachments/assets/c7315f94-4397-4ba5-b6b9-609e6ef21743" />
+<img width="655" height="641" alt="cpuid" src="https://github.com/user-attachments/assets/914ccf5d-8cb2-4df3-bbe6-9cae46246d58" />
+<img width="663" height="638" alt="cachemem" src="https://github.com/user-attachments/assets/40182b48-a9ba-4641-a1a2-32074506ef4b" />
+
 
 Microsoft takes the security of our software products and services seriously, which includes all source code repositories managed through our GitHub organizations, which include [Microsoft](https://github.com/Microsoft), [Azure](https://github.com/Azure), [DotNet](https://github.com/dotnet), [AspNet](https://github.com/aspnet) and [Xamarin](https://github.com/xamarin).
 
