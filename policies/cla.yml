@@ -106,7 +106,7 @@ configuration:
          - pulumi-bot
          - PylanceBot
          - qa-bot
-         - release-please[bot]
+         - release-please-token-provider[bot]
          - renovate[bot]
          - reunion-maestro[bot]
          - rnbot
