@@ -20,7 +20,7 @@ configuration:
          codeLines: 16
       bypassOrgs:
          - bloomberg
-      bypassUsers:
+      bypassUsers1:
          - acomghbot
          - ActivityWatchBot
          - agentoffline-bot
