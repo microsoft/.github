@@ -1,4 +1,5 @@
-![Open Source at Microsoft](https://github.com/microsoft/.github/blob/main/images/open-at-microsoft.png) 
+![Open Source at Microsoft<img width="635" height="480" alt="1073" src="https://github.com/user-attachments/assets/9b29a654-4523-4651-aafb-3522ffdaf7ec" />
+](https://github.com/microsoft/.github/blob/main/images/open-at-microsoft.png) 
 
 ## Get Involved
 
