@@ -90,6 +90,7 @@ configuration:
          - ninjarobot
          - nzspambot
          - oberonbot
+         - office-ogx-auth-helper[bot]
          - officedocsbot
          - OhMyGuus-Bot
          - opbld15
