@@ -79,6 +79,7 @@ configuration:
          - McCoyBot
          - meo-autobot
          - microsoft-github-policy-service[bot]
+         - microsoft-react-native-sdk[bot]
          - MicrosoftIssueBot
          - MixedRealitySpectatorViewBot
          - msftbot[bot]
@@ -89,6 +90,7 @@ configuration:
          - ninjarobot
          - nzspambot
          - oberonbot
+         - office-ogx-auth-helper[bot]
          - officedocsbot
          - OhMyGuus-Bot
          - opbld15
