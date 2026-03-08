@@ -65,6 +65,7 @@ configuration:
          - github-actions[bot]
          - goodboyrobot
          - greenkeeper[bot]
+         - hve-core-release-please[bot]
          - inclusive-coding-bot
          - iotgwbot
          - jenfoxbot
