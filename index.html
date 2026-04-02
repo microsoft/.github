@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Task Manager</h1>
+        <button id="theme-toggle" aria-label="Toggle dark mode">Dark Mode</button>
+    </header>
+    <main class="container">
+        <section class="task-input">
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Enter a new task..." required aria-label="New task">
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        <section class="task-filters">
+            <button id="filter-all" class="active">All</button>
+            <button id="filter-pending">Pending</button>
+            <button id="filter-completed">Completed</button>
+        </section>
+        <section class="task-list-section">
+            <ul id="task-list"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
