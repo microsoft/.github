@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Constants for configuration
     const STORAGE_KEYS = {
         TASKS: 'tasks',
-        THEME: 'theme'
+        THEME: 'theme',
+        FILTER: 'filter'
     };
 
     // DOM Elements
@@ -17,11 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const filterAll = document.getElementById('filter-all');
     const filterPending = document.getElementById('filter-pending');
     const filterCompleted = document.getElementById('filter-completed');
+    const clearCompletedBtn = document.getElementById('clear-completed');
+    const taskCount = document.getElementById('task-count');
     const themeToggle = document.getElementById('theme-toggle');
 
     // Application State
     let tasks = JSON.parse(localStorage.getItem(STORAGE_KEYS.TASKS)) || [];
-    let currentFilter = 'all';
+    let currentFilter = localStorage.getItem(STORAGE_KEYS.FILTER) || 'all';
 
     /**
      * Persists tasks to localStorage.
@@ -39,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     const renderTasks = () => {
         taskList.innerHTML = '';
+        updateTaskCount();
         const filteredTasks = tasks.filter(task => {
             if (currentFilter === 'pending') return !task.completed;
             if (currentFilter === 'completed') return task.completed;
@@ -49,19 +53,25 @@ document.addEventListener('DOMContentLoaded', () => {
             const li = document.createElement('li');
             li.className = `task-item ${task.completed ? 'completed' : ''}`;
 
-            const taskText = document.createElement('span');
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.id = `task-${task.id}`;
+            checkbox.checked = task.completed;
+            checkbox.className = 'task-checkbox';
+            checkbox.addEventListener('change', () => toggleTaskStatus(task.id));
+
+            const taskText = document.createElement('label');
+            taskText.setAttribute('for', `task-${task.id}`);
             taskText.className = 'task-text';
             taskText.textContent = task.text;
-            taskText.addEventListener('click', () => toggleTaskStatus(tasks.indexOf(task)));
 
             const deleteBtn = document.createElement('button');
             deleteBtn.className = 'delete-btn';
             deleteBtn.textContent = 'Delete';
-            deleteBtn.addEventListener('click', (e) => {
-                e.stopPropagation(); // Prevent toggling task status when deleting
-                deleteTask(tasks.indexOf(task));
-            });
+            deleteBtn.setAttribute('aria-label', `Delete task "${task.text}"`);
+            deleteBtn.addEventListener('click', () => deleteTask(task.id));
 
+            li.appendChild(checkbox);
             li.appendChild(taskText);
             li.appendChild(deleteBtn);
             taskList.appendChild(li);
@@ -79,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         tasks.push({
+            id: Date.now().toString(),
             text: trimmedText,
             completed: false
         });
@@ -87,24 +98,40 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     /**
-     * Deletes a task by index.
-     * @param {number} index
+     * Deletes a task by id.
+     * @param {string} id
      */
-    const deleteTask = (index) => {
-        if (index > -1) {
-            tasks.splice(index, 1);
-            saveTasks();
-            renderTasks();
-        }
+    const deleteTask = (id) => {
+        tasks = tasks.filter(task => task.id !== id);
+        saveTasks();
+        renderTasks();
+    };
+
+    /**
+     * Updates the tasks remaining count in the UI.
+     */
+    const updateTaskCount = () => {
+        const remainingTasks = tasks.filter(task => !task.completed).length;
+        taskCount.textContent = `${remainingTasks} task${remainingTasks !== 1 ? 's' : ''} remaining`;
+    };
+
+    /**
+     * Clears all completed tasks.
+     */
+    const clearCompletedTasks = () => {
+        tasks = tasks.filter(task => !task.completed);
+        saveTasks();
+        renderTasks();
     };
 
     /**
      * Toggles completion status of a task.
-     * @param {number} index
+     * @param {string} id
      */
-    const toggleTaskStatus = (index) => {
-        if (tasks[index]) {
-            tasks[index].completed = !tasks[index].completed;
+    const toggleTaskStatus = (id) => {
+        const task = tasks.find(t => t.id === id);
+        if (task) {
+            task.completed = !task.completed;
             saveTasks();
             renderTasks();
         }
@@ -116,6 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     const setFilter = (filter) => {
         currentFilter = filter;
+        localStorage.setItem(STORAGE_KEYS.FILTER, filter);
         document.querySelectorAll('.task-filters button').forEach(btn => btn.classList.remove('active'));
         const activeBtn = document.getElementById(`filter-${filter}`);
         if (activeBtn) activeBtn.classList.add('active');
@@ -148,8 +176,10 @@ document.addEventListener('DOMContentLoaded', () => {
     filterAll.addEventListener('click', () => setFilter('all'));
     filterPending.addEventListener('click', () => setFilter('pending'));
     filterCompleted.addEventListener('click', () => setFilter('completed'));
+    clearCompletedBtn.addEventListener('click', clearCompletedTasks);
     themeToggle.addEventListener('click', toggleTheme);
 
     // Initial Render
+    setFilter(currentFilter);
     renderTasks();
 });
