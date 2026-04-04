@@ -11,12 +11,10 @@
 }
 
 [data-theme="dark"] {
-    --background-color: #121212;
-    --text-color: #e0e0e0;
-    --container-bg: #1e1e1e;
-    --border-color: #333;
-    --input-bg: #2c2c2c;
-    --input-text: #e0e0e0;
+    --background-color: #1a1a1a;
+    --text-color: #f8f9fa;
+    --container-bg: #2d2d2d;
+    --border-color: #444;
 }
 
 body {
@@ -71,8 +69,6 @@ header {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     font-size: 1rem;
-    background-color: var(--input-bg, #fff);
-    color: var(--input-text, #333);
 }
 
 .task-input button {
@@ -104,23 +100,12 @@ header {
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.2s;
-    color: var(--text-color);
 }
 
 .task-filters button.active {
     background-color: var(--primary-color);
     color: white;
     border-color: var(--primary-color);
-}
-
-.task-filters button:focus-visible,
-.task-input button:focus-visible,
-.task-input input:focus-visible,
-#theme-toggle:focus-visible,
-.delete-btn:focus-visible,
-.task-checkbox:focus-visible {
-    outline: 2px solid var(--primary-color);
-    outline-offset: 2px;
 }
 
 ul {
@@ -151,12 +136,6 @@ ul {
     color: #888;
 }
 
-.task-checkbox {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-
 .delete-btn {
     padding: 5px 10px;
     background-color: var(--danger-color);
@@ -168,24 +147,6 @@ ul {
 
 .delete-btn:hover {
     background-color: var(--danger-hover);
-}
-
-.danger-btn {
-    color: var(--danger-color) !important;
-    border-color: var(--danger-color) !important;
-}
-
-.danger-btn:hover {
-    background-color: var(--danger-color) !important;
-    color: white !important;
-}
-
-.task-footer {
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border-color);
-    font-size: 0.9rem;
-    color: #888;
 }
 
 @media (max-width: 480px) {
