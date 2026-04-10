@@ -1,21 +1,15 @@
-MIT License
+# Licensing Architecture
 
-    Copyright (c) Microsoft Corporation.
+The project "MILEHIGH.WORLD: INTO THE VOID" is governed by a multi-layered licensing architecture. This repository does not use a single license.
 
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
+Please refer to the following documents in the `legal/` directory for specific terms:
 
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
+1.  **[Proprietary EULA](legal/EULA.md)**: Governs the executable client and client-side architecture.
+2.  **[CC BY-NC-ND 4.0](legal/CC-BY-NC-ND-4.0.md)**: Governs narrative mythos, iconography, and lore.
+3.  **[Business Source License 1.1](legal/BSL-1.1.md)**: Governs technical infrastructure and source code.
+4.  **[Managed Sync License](legal/SYNC-LICENSE.md)**: Governs auditory scores and musical recordings.
 
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-    SOFTWARE
+**Strict Proscription:** Any use of Project assets for the training of Artificial Intelligence (AI) or Machine Learning (ML) models is absolutely prohibited without express written consent from MILEHIGH-WORLD LLC.
+
+---
+MILEHIGH-WORLD LLC
