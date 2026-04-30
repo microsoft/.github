@@ -141,6 +141,7 @@ configuration:
          - microsoft-playwright-automation[bot]
          - chatconfig-production[bot]
          - az-ai-foundry-release-please[bot]
+         - cchh-releasenotes-githubapp[bot]
 
       prohibitedCompanies:
          - msft
