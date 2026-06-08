@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
         "IHDR"
+    ],
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
     ]
 }
