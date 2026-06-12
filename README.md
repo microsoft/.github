@@ -1,2 +1,6 @@
-# .github
-Default Community Health Files for the Microsoft organization on GitHub
+foo_project.md
+---
+author: "John Smith"
+layout: "foobar"
+---
+The post text goes here...
