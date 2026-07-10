@@ -103,6 +103,7 @@ configuration:
          - opbld27
          - openapi-sdkautomation[bot]
          - openpublishbuild
+         - OssSecurityBot
          - OutlookBot
          - pbicvbot
          - playwrightmachine
