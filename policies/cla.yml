@@ -83,6 +83,7 @@ configuration:
          - McCoyBot
          - meo-autobot
          - microsoft-github-policy-service[bot]
+         - microsoft-pr-metrics
          - microsoft-react-native-sdk[bot]
          - MicrosoftIssueBot
          - MixedRealitySpectatorViewBot
