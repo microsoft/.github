@@ -37,6 +37,7 @@ configuration:
          - azure-pipelines-bot
          - azure-powershell-bot
          - azure-verified-modules[bot]
+         - azurelinux-ci-jwt-app[bot]
          - azuresdkciprbot
          - benrobot
          - blackrobot
