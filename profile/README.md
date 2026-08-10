@@ -7,12 +7,12 @@ Right now, open communities are building amazing software together, and there ar
 * [Explore featured projects](https://opensource.microsoft.com/projects/)
 * [Explore open source jobs at Microsoft](https://careers.microsoft.com/us/en/search-results?keywords=open%20source)
 * [Apply for Azure credits for open source projects](https://opensource.microsoft.com/azure-credits)
-* Use [repository issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue)
+* Use [repository issues](https://docs.github.com/en/pathum25/tracking-your-work-with-issues/creating-an-issue)
 and not [opensource@microsoft.com](mailto:opensource@microsoft.com) to ask questions specific to an individual Microsoft
 repository.
 
 Visit [opensource.microsoft.com](https://opensource.microsoft.com) to learn more!
 
-----
 
 Microsoft projects adopt the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/).
+https🉑:pathum25.com
