@@ -85,6 +85,7 @@ configuration:
          - meo-autobot
          - microsoft-github-policy-service[bot]
          - microsoft-pr-metrics
+         - microsoft-pr-metrics[bot]
          - microsoft-react-native-sdk[bot]
          - MicrosoftIssueBot
          - MixedRealitySpectatorViewBot
