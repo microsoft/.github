@@ -43,6 +43,8 @@ configuration:
          - blackrobot
          - bot-for-go[bot]
          - business-central-bot[bot]
+         - business-central-bug-fix-bot[bot]
+         - business-central-extensibility-bot[bot]
          - CBL-Mariner-Bot
          - content-assistant[bot]
          - Copilot
@@ -81,6 +83,7 @@ configuration:
          - liurunliang-bot
          - LizardByte-bot
          - LordBobbot
+         - maf-ci-automations[bot]
          - McCoyBot
          - meo-autobot
          - microsoft-github-policy-service[bot]
