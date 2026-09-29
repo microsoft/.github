@@ -86,6 +86,7 @@ configuration:
          - maf-ci-automations[bot]
          - McCoyBot
          - meo-autobot
+         - microsoft-agent-framework-for-go[bot]
          - microsoft-github-policy-service[bot]
          - microsoft-pr-metrics
          - microsoft-pr-metrics[bot]
