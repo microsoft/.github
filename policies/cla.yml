@@ -153,6 +153,7 @@ configuration:
          - chatconfig-production[bot]
          - az-ai-foundry-release-please[bot]
          - cchh-releasenotes-githubapp
+         - microsoft-crypto-updater-for-go[bot]
 
       prohibitedCompanies:
          - msft
