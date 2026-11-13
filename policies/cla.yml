@@ -99,6 +99,7 @@ configuration:
          - MSLearnBot
          - mu-automation[bot]
          - mukaibot
+         - net-containers-bot[bot]
          - nfbot
          - ninjarobot
          - nzspambot
