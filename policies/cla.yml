@@ -155,6 +155,7 @@ configuration:
          - az-ai-foundry-release-please[bot]
          - cchh-releasenotes-githubapp
          - microsoft-crypto-updater-for-go[bot]
+         - microsoft-canary-updater-for-go[bot]
 
       prohibitedCompanies:
          - msft
